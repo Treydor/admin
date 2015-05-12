@@ -12,7 +12,7 @@
   box-sizing: border-box;
 }
 
-html { font: 400 15px/1.5 "Roboto", sans-serif; }
+html { font: 400 16px/1.5 "Roboto", sans-serif; }
 
 body {
   background: #e5e5e5;
@@ -22,9 +22,8 @@ body {
 }
 
 header {
-  background: #455a64;
   color: #fff;
-  padding: 1rem;
+  padding: 2rem;
   width: 100%
 }
 
@@ -34,8 +33,6 @@ header {
 }
 
 .row { margin-bottom: 1rem; }
-
-.row:last-of-type { margin-bottom: 0; }
 
 .column {
   float: left;
@@ -67,7 +64,7 @@ h2 {
   font-size: 20px;
 }
 
-h3 { font-size: 16px; }
+h3 { font-size: 18px; }
 
 /* ==========================================
    Page elements
@@ -75,63 +72,71 @@ h3 { font-size: 16px; }
 
 .box {
   background: #fff;
-  border: 1px solid #d5d5d5;
-  margin: 2rem 0;
+  border: 1px solid #dedede;
+  margin: 0;
   padding: 2rem;
+}
+
+.box__section--center {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.row__user-text {
+  color: #000;
+  font-size: 15px;
+  margin-left: .5rem;
 }
 
 /* ==========================================
    Profile
    ========================================== */
 
-.profile {
-  margin: 0 auto;
-  width: 100%
-}
-
-.profile__avatar {
-  background: #f7f7f7;
-  background-size: cover;
-  height: 180px;
-  padding: 1rem;
-}
 
 /* ==========================================
    Forms
    ========================================== */
 
 .textfield {
-  background: #f7f7f7;
+  background: #f9f9f9;
   border: none;
+  border-bottom: 1px solid #ddd;
   color: #000;
   display: block;
   font-weight: 300;
   outline: none;
-  padding: .7rem 1rem;
+  padding: .8rem 1rem;
   width: 100%
 }
 
 .textfield:focus { background: #f3f3f3; }
-
-.textfield--border { border: 1px solid #ddd; }
 
 .textfield--textarea {
   height: 188px;
   resize: none;
 }
 
+.row-center {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.remember {
+  color: #777;
+  margin-left: .3rem; }
+
 .button-primary {
-  background: #0097a7;
+  background: #78909c;
   border: none;
   color: #fff;
-  font-weight: 600;
+  font-weight: 400;
   padding: .8rem 1rem;
   width: 100%;
 }
 
-::-webkit-input-placeholder { color: #777; }
-::-moz-placeholder { color: #777; }
-::-ms-placeholder { color: #777; }
+::-webkit-input-placeholder { color: #555; }
+::-moz-placeholder { color: #555; }
+::-ms-placeholder { color: #555; }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
