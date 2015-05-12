@@ -2,20 +2,63 @@
 layout: default
 title: Admin page
 ---
+
+<form>
+
 <div class="box">
+  <h3>User Profile</h3>
   <div class="profile">
-    <div class="profile__avatar"></div>
-    <input class="profile__name" placeholder="Enter your name" type="text">
+    <div class="row">
+      <input class="textfield" placeholder="Username" type="text">
+    </div>
+    <div class="row">
+      <input class="textfield" placeholder="Email" type="email">
+    </div>
+    <div class="row">
+      <input class="textfield" placeholder="Create Password" type="password">
+    </div>
+    <div class="row">
+      <input class="textfield" placeholder="Confirm Password" type="password">
+    </div>
   </div>
 </div>
 
-
-
-
+<div class="box">
+  <h3>Personal Information</h3>
+  <div class="row cf">
+    <div class="column full">
+      <input class="textfield" placeholder="Full name" type="text">
+    </div>
+  </div>
+  <div class="row cf">
+    <div class="column full">
+      <input class="textfield" placeholder="Street Address" type="text">
+    </div>
+  </div>
+  <div class="row cf">
+    <div class="column full">
+      <input class="textfield" placeholder="City" type="text">
+    </div>
+  </div>
+  <div class="row cf">
+    <div class="column half">
+      <input class="textfield" placeholder="State" type="text">
+    </div>
+    <div class="column half">
+      <input class="textfield" placeholder="Zip" type="number">
+    </div>
+  </div>
+</div>
 
 <div class="box">
-  <h1>Light 34 px</h1>
-  <h2>Medium 20px</h2>
-  <h3>Regular 15px</h3>
-  <p>Body</p>
+  <h3>Biography</h3>
+  <div class="row cf">
+    <div class="column full">
+      <textarea class="textfield textfield--textarea" placeholder="What are your hobbies?"></textarea>
+    </div>
+  </div>
 </div>
+
+<input class="button-primary" type="submit" value="Update">
+
+</form>
