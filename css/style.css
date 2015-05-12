@@ -1,1 +1,150 @@
-body { background: #fff; }
+/* ==========================================
+   Basic styles
+   ========================================== */
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html { font: 400 100%/1.5 "Oxygen", serif; }
+
+body {
+  background: #e7e7e7;
+  color: #000;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+/* ==========================================
+   Page elements
+   ========================================== */
+
+.profile--wrapper {
+  margin: 2rem 0;
+  width: 220px;
+}
+
+.profile--avatar {
+  background: #f7f7f7;
+  height: 180px;
+}
+
+.profile--avatar__name {
+  background: #f0f0f0;
+  font-size: 1.2rem;
+  padding: .5rem 0;
+  text-align: center;
+}
+
+.user-input-wrapper {
+  background: #f0f0f0;
+  margin: 2rem 0;
+  padding: 1.5rem 0;
+}
+
+.user-input-header { margin-bottom: 1rem; }
+
+/* ==========================================
+  Grid
+  ========================================== */
+
+.box {
+  background: #fff;
+  border: 1px solid #ddd;
+  margin: 2rem 0;
+  overflow: hidden;
+  padding: 3rem;
+}
+
+.row { margin-bottom: 2rem; }
+
+.row:last-of-type { margin: 0; }
+
+.column {
+  float: left;
+  margin-left: 2rem;
+}
+
+.column:first-of-type { margin-left: 0; }
+
+.full { width: 100%; }
+.half { width: 46.8%; }
+.third { width: 29%; }
+
+/* ==========================================
+   Forms
+   ========================================== */
+
+ .form__textfield {
+   background: #fff;
+   color: #555;
+   outline: none;
+   border: 1px solid #ddd;
+   box-shadow: none;
+   display: block;
+   padding: .7rem;
+   width: 100%
+ }
+
+ .form__textfield:focus {
+   background: #fffef1;
+   border: 1px solid #bbb;
+ }
+
+label {
+  color: #999;
+  display: block;
+  font-size: .8rem;
+  font-weight: 700;
+  margin-bottom: .3rem;
+  text-transform: uppercase;
+}
+
+.checkbox-header {
+  color: #999;
+  display: block;
+  font-size: .8rem;
+  font-weight: 700;
+  margin-bottom: .3rem;
+  text-transform: uppercase;
+}
+
+/* ==========================================
+   clearfix
+   ========================================== */
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after { clear: both; }
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    clear: both;
+    *zoom: 1;
+}
