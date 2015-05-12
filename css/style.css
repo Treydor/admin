@@ -12,26 +12,40 @@
   box-sizing: border-box;
 }
 
-html { font: 400 13px /1.5 "Roboto", sans-serif; }
+html { font: 400 15px/1.5 "Roboto", sans-serif; }
 
 body {
-  background: #f1f1f1;
+  background: #e5e5e5;
   color: #000;
-  margin: 0;
+  margin: 0 0 3rem 0;
   padding: 0;
 }
 
 header {
   background: #455a64;
   color: #fff;
-  margin-bottom: 2rem;
-  padding: 0;
+  padding: 1rem;
+  width: 100%
 }
 
 .container {
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 500px;
 }
+
+.row { margin-bottom: 1rem; }
+
+.row:last-of-type { margin-bottom: 0; }
+
+.column {
+  float: left;
+  margin-left: 2rem;
+}
+
+.column:first-child { margin: 0; }
+
+.full { width: 100%; }
+.half { width: 46.3%; }
 
 /* ==========================================
    Typography
@@ -39,7 +53,7 @@ header {
 
 h1, h2, h3, h4 {
   font-weight: 400;
-  margin: 0;
+  margin: 0 0 1rem 0;
   padding: 0;
 }
 
@@ -53,7 +67,7 @@ h2 {
   font-size: 20px;
 }
 
-h3 { font-size: 15px; }
+h3 { font-size: 16px; }
 
 /* ==========================================
    Page elements
@@ -61,7 +75,8 @@ h3 { font-size: 15px; }
 
 .box {
   background: #fff;
-  margin-bottom: 2rem;
+  border: 1px solid #d5d5d5;
+  margin: 2rem 0;
   padding: 2rem;
 }
 
@@ -71,42 +86,57 @@ h3 { font-size: 15px; }
 
 .profile {
   margin: 0 auto;
-  max-width: 230px;
+  width: 100%
 }
 
 .profile__avatar {
-  background-image: url("../images/profile.jpg");
-  background-position: 50%;
+  background: #f7f7f7;
   background-size: cover;
-  border-radius: 50%;
-  height: 230px;
-  margin: 0 auto;
+  height: 180px;
+  padding: 1rem;
 }
-
-.profile__name {
-  border: none;
-  color: #000;
-  display: block;
-  font-size: 22px;
-  font-weight: 300;
-  margin: .8rem auto 0 auto;
-  outline: none;
-  padding: .6rem 0;
-  text-align: center;
-}
-
-.profile__name:focus { background: #eceff1; }
 
 /* ==========================================
    Forms
    ========================================== */
 
 .textfield {
-  background: #fff;
-  color: #777;
+  background: #f7f7f7;
+  border: none;
+  color: #000;
+  display: block;
+  font-weight: 300;
   outline: none;
-  padding: .5rem;
+  padding: .7rem 1rem;
   width: 100%
+}
+
+.textfield:focus { background: #f3f3f3; }
+
+.textfield--border { border: 1px solid #ddd; }
+
+.textfield--textarea {
+  height: 188px;
+  resize: none;
+}
+
+.button-primary {
+  background: #0097a7;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  padding: .8rem 1rem;
+  width: 100%;
+}
+
+::-webkit-input-placeholder { color: #777; }
+::-moz-placeholder { color: #777; }
+::-ms-placeholder { color: #777; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 /* ==========================================
