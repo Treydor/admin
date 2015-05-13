@@ -1,4 +1,4 @@
-## Settings project
+# Settings project
 A simple settings page by [Noah Rogers](http://treydor.github.io).
 
 ### Requirements
