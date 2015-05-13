@@ -86,18 +86,16 @@ h3 { font-size: 18px; }
   display: block;
   color: #2196f3;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 5  00;
   margin: 3rem 0 1rem 0;
   text-transform: uppercase;
 }
 
 .row__user--checkbox { margin-top: 2rem; }
 
-.keep-private {
-  color: #000;
-  font-size: 15px;
-  margin-left: .5rem;
-}
+.checkbox-label { display: block; }
+
+.keep-private { margin-left: .5rem; }
 
 /* ==========================================
    Profile
