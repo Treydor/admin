@@ -1,5 +1,5 @@
-## Settings
-A simple user's settings page by [Noah Rogers](http://treydor.github.io).
+## Settings project
+A simple settings page by [Noah Rogers](http://treydor.github.io).
 
 ### Requirements
 * Use [Material Design](http://www.google.com/design/spec/material-design/introduction.html) guidelines for color, typography, etc
