@@ -181,7 +181,7 @@ fieldset {
   width: 175px;
 }
 
-.button-primary:hover { background: #1e88e5; }
+.button-primary:hover { color: #fff176; }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
