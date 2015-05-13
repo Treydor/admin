@@ -1,4 +1,4 @@
-## Admin
+## Settings
 A simple user's settings page by [Noah Rogers](http://treydor.github.io).
 
 ### Requirements
