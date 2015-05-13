@@ -2,10 +2,12 @@
 layout: default
 title: Admin page
 ---
+<h1>Settings</h1>
 
 <form>
   <div class="box">
     <fieldset class="cf">
+
       <div class="column half">
         <label class="box__section-header">Account</label>
         <div class="row">
@@ -17,13 +19,17 @@ title: Admin page
         <div class="row">
           <input class="textfield" placeholder="Password" type="password">
         </div>
-        <div class="row">
+        <div class="row cf">
           <input class="textfield" placeholder="Confirm Password" type="password">
         </div>
       </div>
+
       <div class="column half">
-        <div class="profile__avatar"></div>
+        <div class="profile__avatar">
+          <div class="profile__avatar--change"></div>
+        </div>
       </div>
+
     </fieldset>
   </div>
 
@@ -39,7 +45,7 @@ title: Admin page
       <div class="row">
         <input class="textfield" placeholder="City" type="text">
       </div>
-      <div class="row cf">
+      <div class="row">
         <div class="column half">
           <input class="textfield" placeholder="State" type="text">
         </div>
@@ -47,7 +53,7 @@ title: Admin page
           <input class="textfield" placeholder="Zip Code" type="number">
         </div>
       </div>
-      <div class="row">
+      <div class="row cf">
         <div class="row__user--checkbox">
           <label class="checkbox-label">
             <input type="checkbox"><span class="keep-private">Keep my personal information private.</span>
