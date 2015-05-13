@@ -2,76 +2,145 @@
 layout: default
 title: Admin page
 ---
-<h1>Settings</h1>
-
-<form>
-  <div class="box">
-    <fieldset class="cf">
-
+<div class="hero">
+  <div class="container">
+    <div class="row cf">
       <div class="column half">
-        <label class="box__section-header">Account</label>
+        <h1 class="page-title ">Settings</h1>
+      </div>
+      <div class="column half">
+        <div class="profile__avatar"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <form>
+
+  <!-- <div class="box">
+    <fieldset class="cf">
+      <div class="column half">
+        <legend class="box__section-header">Account</legend>
         <div class="row">
-          <input class="textfield" placeholder="Username" type="text">
+          <input class="textfield" placeholder="Email" type="text">
         </div>
         <div class="row">
-          <input class="textfield" placeholder="Email" type="email">
-        </div>
-        <div class="row">
-          <input class="textfield" placeholder="Password" type="password">
-        </div>
-        <div class="row cf">
-          <input class="textfield" placeholder="Confirm Password" type="password">
+          <input class="textfield" placeholder="Confirm Email" type="email">
         </div>
       </div>
-
       <div class="column half">
         <div class="profile__avatar">
           <div class="profile__avatar--change"></div>
         </div>
       </div>
-
     </fieldset>
-  </div>
+  </div> -->
 
-  <div class="box">
-    <fieldset>
-      <div class="row">
-        <label class="box__section-header">Personal</label>
-        <input class="textfield" placeholder="Full name" type="text">
-      </div>
-      <div class="row">
-        <input class="textfield" placeholder="Street Address" type="text">
-      </div>
-      <div class="row">
-        <input class="textfield" placeholder="City" type="text">
-      </div>
-      <div class="row">
-        <div class="column half">
-          <input class="textfield" placeholder="State" type="text">
-        </div>
-        <div class="column half">
-          <input class="textfield" placeholder="Zip Code" type="number">
+  <!-- <div class="profile__avatar">
+    <div class="profile__avatar--change"></div>
+  </div> -->
+
+    <!-- <div class="row cf">
+      <div class="column half">
+        <div class="box">
+          <fieldset class="cf">
+            <legend class="box__section-header">Account</legend>
+            <div class="row">
+              <input class="textfield" placeholder="Email" type="email  ">
+            </div>
+            <div class="row">
+              <input class="textfield" placeholder="Confirm Email" type="email">
+            </div>
+          </fieldset>
         </div>
       </div>
-      <div class="row cf">
-        <div class="row__user--checkbox">
-          <label class="checkbox-label">
-            <input type="checkbox"><span class="keep-private">Keep my personal information private.</span>
-          </label>
+      <div class="column half">
+        <div class="box">
+          <fieldset class="cf">
+            <legend class="box__section-header">Password</legend>
+            <div class="row">
+              <input class="textfield" placeholder="Password" type="password">
+              </div>
+            <div class="row">
+              <input class="textfield" placeholder="Confirm Password" type="password">
+            </div>
+          </fieldset>
         </div>
       </div>
-    </fieldset>
-  </div>
+    </div> -->
 
-  <div class="box">
-    <fieldset>
-      <div class="row">
-        <label class="box__section-header">About</label>
-        <textarea class="textfield textfield--textarea" placeholder="What are your hobbies?"></textarea>
-      </div>
-    </fieldset>
-  </div>
 
-  <input class="button-primary" type="submit" value="Save">
 
-</form>
+
+    <div class="box">
+      <fieldset class="cf">
+        <legend class="box__section-header">Account</legend>
+        <div class="row">
+          <div class="column half">
+            <input class="textfield" placeholder="Email" type="email  ">
+          </div>
+          <div class="column half">
+            <input class="textfield" placeholder="Confirm Email" type="email">
+          </div>
+        </div>
+      </fieldset>
+    </div>
+
+    <div class="box">
+      <fieldset class="cf">
+        <legend class="box__section-header">Password</legend>
+        <div class="row">
+          <div class="column half">
+            <input class="textfield" placeholder="Password" type="password">
+          </div>
+          <div class="column half">
+            <input class="textfield" placeholder="Confirm Password" type="password">
+          </div>
+        </div>
+      </fieldset>
+    </div>
+
+    <div class="box">
+      <fieldset>
+        <div class="row">
+          <legend class="box__section-header">Personal</legend>
+          <input class="textfield" placeholder="Full name" type="text">
+        </div>
+        <div class="row">
+          <input class="textfield" placeholder="Street Address" type="text">
+        </div>
+        <div class="row">
+          <input class="textfield" placeholder="City" type="text">
+        </div>
+        <div class="row">
+          <div class="column half">
+            <input class="textfield" placeholder="State" type="text">
+          </div>
+          <div class="column half">
+            <input class="textfield" placeholder="Zip Code" type="number">
+          </div>
+        </div>
+        <div class="row cf">
+          <div class="row__user--checkbox">
+            <label class="checkbox-label">
+              <input type="checkbox"><span class="keep-private">Keep my personal information private.</span>
+            </label>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+
+    <div class="box">
+      <fieldset>
+        <div class="row">
+          <legend class="box__section-header">About</legend>
+          <textarea class="textfield textfield--textarea" placeholder="What are your hobbies?"></textarea>
+        </div>
+      </fieldset>
+    </div>
+
+    <input class="button-primary" type="submit" value="Save">
+
+  </form>
+</div>
