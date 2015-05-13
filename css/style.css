@@ -46,7 +46,7 @@ header {
 .column:first-of-type { margin: 0; }
 
 .full { width: 100%; }
-.half { width: 47.3%; }
+.half { width: 47.5%; }
 
 /* ==========================================
    Typography
@@ -110,7 +110,31 @@ h3 { font-size: 18px; }
   border-radius: 50%;
   height: 233px;
   margin: 0 auto;
+  position: relative;
   width: 233px;
+}
+
+.profile__avatar--change {
+  background: #1976d2;
+  background-size: 33px 139px;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 50px;
+  position: absolute;
+  width: 50px;
+  top: 170px;
+  right: 5px;
+}
+
+.profile__avatar--change:hover:before { color: #fff176; }
+
+.profile__avatar--change:before {
+  color: #fff;
+  content: "+";
+  display: block;
+  font-size: 22px;
+  line-height: 50px;
+  text-align: center;
 }
 
 /* ==========================================
@@ -169,28 +193,14 @@ input::-webkit-inner-spin-button {
    Clearfix
    ========================================== */
 
-/**
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    contenteditable attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that are clearfixed.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
+ .cf {
+   clear: both;
+   *zoom: 1;
+ }
+
 .cf:before,
 .cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.cf:after { clear: both; }
-
-/**
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-.cf {
-    clear: both;
-    *zoom: 1;
+  clear: both;
+  content: " ";
+  display: table;
 }
