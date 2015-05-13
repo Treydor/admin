@@ -109,13 +109,6 @@ h3 { font-size: 18px; }
 
 .row__user--checkbox { margin-top: 2rem; }
 
-.checkbox-label {
-  cursor: pointer;
-  display: block;
-}
-
-.keep-private { margin-left: .5rem; }
-
 /* ==========================================
    Profile
    ========================================== */
@@ -132,15 +125,15 @@ h3 { font-size: 18px; }
 }
 
 .profile__avatar--change {
-  background: #2196f3;
+  background: #82b1ff;
   background-size: 33px 139px;
   border-radius: 50%;
   cursor: pointer;
-  height: 30px;
+  height: 20px;
   position: absolute;
-  width: 30px;
-  top: 170px;
-  right: 5px;
+  width: 20px;
+  right: 0;
+  top: 35px;
 }
 
 .profile__avatar--change:hover:before { color: #fff176; }
@@ -149,8 +142,8 @@ h3 { font-size: 18px; }
   color: #fff;
   content: "+";
   display: block;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 20px;
   text-align: center;
 }
 
@@ -178,13 +171,8 @@ fieldset {
 .textfield:focus { border-bottom: 1px solid #2196f3; }
 
 .textfield--textarea {
-  height: 135px;
+  height: 84px;
   resize: none;
-}
-
-.remember {
-  color: #777;
-  margin-left: .3rem;
 }
 
 .button-primary {
@@ -198,12 +186,26 @@ fieldset {
   width: 175px;
 }
 
-.button-primary:hover { color: #fff176; }
+.button-primary:hover { background: #1e88e5; }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.checkbox-option {
+  cursor: pointer;
+  display: block;
+}
+
+.radio-option {
+  cursor: pointer;
+  display: block;
+}
+
+.checkbox-option span, .radio-option span {
+  margin-left: .5rem;
 }
 
 /* ==========================================
