@@ -2,27 +2,27 @@
 A simple settings page by [Noah Rogers](http://treydor.github.io).
 
 ### Requirements
-* Use [Material Design](http://www.google.com/design/spec/material-design/introduction.html) guidelines for color, typography, etc
+* Use [Material Design](http://www.google.com/design/spec/material-design/introduction.html) guidelines for color, typography, etc.
 
-* Uses Inputs, Text Areas, Radio, Selects
+* Uses inputs, text areas, radio, selects.
 
-* Create validation errors and an appropriate style for all inputs
+* Create validation errors and an appropriate style for all inputs.
 
-* 1 page website with sections for Email, Profile Picture, Password, Bio, and more.
+* One page website with sections for email, profile picture, password, bio, and more.
 
 ### Viewing the project
 
-#### Install Jekyll
+##### Install Jekyll
 ```
 bundle
 ```
 
-#### Start server
+##### Start server
 ```
 jekyll serve
 ```
 
-#### Visiting the project
+##### Visiting the project
 ```
 localhost:4000
 ```
