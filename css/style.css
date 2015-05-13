@@ -24,14 +24,13 @@ body {
 header {
   background: #1976d2;
   color: #fff;
-  font-size: 32px;
   padding: 3rem 2rem 1.5rem 2rem;
   width: 100%
 }
 
 .container {
   margin: 0 auto;
-  max-width: 500px;
+  max-width: 600px;
 }
 
 .row { margin: .5rem 0; }
@@ -69,6 +68,8 @@ h2 {
 }
 
 h3 { font-size: 18px; }
+
+.page-title { margin: 0; }
 
 /* ==========================================
    Page elements
@@ -112,7 +113,6 @@ h3 { font-size: 18px; }
   border-bottom: 1px solid #ddd;
   color: #000;
   display: block;
-  font-weight: 300;
   outline: none;
   padding: .8rem 1rem;
   width: 100%
@@ -121,13 +121,14 @@ h3 { font-size: 18px; }
 .textfield:focus {border-bottom: 1px solid #2196f3; }
 
 .textfield--textarea {
-  height: 188px;
+  height: 135px;
   resize: none;
 }
 
 .remember {
   color: #777;
-  margin-left: .3rem; }
+  margin-left: .3rem;
+}
 
 .button-primary {
   background: #2196f3;
