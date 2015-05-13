@@ -9,7 +9,9 @@ title: Admin page
         <h1 class="page-title ">Settings</h1>
       </div>
       <div class="column half">
-        <div class="profile__avatar"></div>
+        <div class="profile__avatar">
+          <div class="profile__avatar--change"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -17,68 +19,12 @@ title: Admin page
 
 <div class="container">
   <form>
-
-  <!-- <div class="box">
-    <fieldset class="cf">
-      <div class="column half">
-        <legend class="box__section-header">Account</legend>
-        <div class="row">
-          <input class="textfield" placeholder="Email" type="text">
-        </div>
-        <div class="row">
-          <input class="textfield" placeholder="Confirm Email" type="email">
-        </div>
-      </div>
-      <div class="column half">
-        <div class="profile__avatar">
-          <div class="profile__avatar--change"></div>
-        </div>
-      </div>
-    </fieldset>
-  </div> -->
-
-  <!-- <div class="profile__avatar">
-    <div class="profile__avatar--change"></div>
-  </div> -->
-
-    <!-- <div class="row cf">
-      <div class="column half">
-        <div class="box">
-          <fieldset class="cf">
-            <legend class="box__section-header">Account</legend>
-            <div class="row">
-              <input class="textfield" placeholder="Email" type="email  ">
-            </div>
-            <div class="row">
-              <input class="textfield" placeholder="Confirm Email" type="email">
-            </div>
-          </fieldset>
-        </div>
-      </div>
-      <div class="column half">
-        <div class="box">
-          <fieldset class="cf">
-            <legend class="box__section-header">Password</legend>
-            <div class="row">
-              <input class="textfield" placeholder="Password" type="password">
-              </div>
-            <div class="row">
-              <input class="textfield" placeholder="Confirm Password" type="password">
-            </div>
-          </fieldset>
-        </div>
-      </div>
-    </div> -->
-
-
-
-
     <div class="box">
       <fieldset class="cf">
         <legend class="box__section-header">Account</legend>
         <div class="row">
           <div class="column half">
-            <input class="textfield" placeholder="Email" type="email  ">
+            <input class="textfield" placeholder="Email" type="email">
           </div>
           <div class="column half">
             <input class="textfield" placeholder="Confirm Email" type="email">
@@ -103,8 +49,8 @@ title: Admin page
 
     <div class="box">
       <fieldset>
+        <legend class="box__section-header">Personal</legend>
         <div class="row">
-          <legend class="box__section-header">Personal</legend>
           <input class="textfield" placeholder="Full name" type="text">
         </div>
         <div class="row">
@@ -123,8 +69,9 @@ title: Admin page
         </div>
         <div class="row cf">
           <div class="row__user--checkbox">
-            <label class="checkbox-label">
-              <input type="checkbox"><span class="keep-private">Keep my personal information private.</span>
+            <label class="checkbox-option">
+              <input type="checkbox">
+              <span>Keep my personal information private.</span>
             </label>
           </div>
         </div>
@@ -133,10 +80,30 @@ title: Admin page
 
     <div class="box">
       <fieldset>
+        <legend class="box__section-header">About</legend>
         <div class="row">
-          <legend class="box__section-header">About</legend>
           <textarea class="textfield textfield--textarea" placeholder="What are your hobbies?"></textarea>
         </div>
+        <div class="row">
+          <textarea class="textfield textfield--textarea" placeholder="What kind of music do you listen to?"></textarea>
+        </div>
+        <div class="row">
+          <textarea class="textfield textfield--textarea" placeholder="What are your favorite movies?"></textarea>
+        </div>
+      </fieldset>
+    </div>
+
+    <div class="box">
+      <fieldset>
+        <legend class="box__section-header">Notification Preferences</legend>
+        <label class="radio-option">
+          <input type="radio" name="notifications" value="all">
+          <span class="radio-span">All</span>
+        </label>
+        <label class="radio-option">
+          <input type="radio" name="notifications" value="disable">
+          <span class="radio-span">Disable</span>
+        </label>
       </fieldset>
     </div>
 
