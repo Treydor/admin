@@ -12,28 +12,29 @@
   box-sizing: border-box;
 }
 
-html { font: 400 16px/1.5 "Roboto", sans-serif; }
+html { font: 400 14px/1.5 "Roboto", sans-serif; }
 
 body {
   background: #e5e5e5;
   color: #000;
-  margin: 0 0 3rem 0;
+  margin: 0;
   padding: 0;
 }
 
 header {
   background: #1976d2;
   color: #fff;
-  padding: 3rem 2rem 1.5rem 2rem;
+  margin-bottom: 2rem;
+  padding: 3rem 0 1.5rem 0;
   width: 100%
 }
 
 .container {
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 640px;
 }
 
-.row { margin: .5rem 0; }
+.row { margin-bottom: 1rem; }
 
 .row:last-child { margin: 0;  }
 
@@ -42,10 +43,10 @@ header {
   margin-left: 2rem;
 }
 
-.column:first-child { margin: 0; }
+.column:first-of-type { margin: 0; }
 
 .full { width: 100%; }
-.half { width: 46.3%; }
+.half { width: 47.3%; }
 
 /* ==========================================
    Typography
@@ -78,7 +79,7 @@ h3 { font-size: 18px; }
 .box {
   background: #fff;
   border: 1px solid #dedede;
-  margin: 0;
+  margin-bottom: 2rem;
   padding: 2rem;
 }
 
@@ -86,8 +87,9 @@ h3 { font-size: 18px; }
   display: block;
   color: #2196f3;
   font-size: 14px;
-  font-weight: 5  00;
-  margin: 3rem 0 1rem 0;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding: 0;
   text-transform: uppercase;
 }
 
@@ -95,7 +97,7 @@ h3 { font-size: 18px; }
 
 .checkbox-label {
   cursor: pointer;
-  display: block; 
+  display: block;
 }
 
 .keep-private { margin-left: .5rem; }
@@ -104,6 +106,13 @@ h3 { font-size: 18px; }
    Profile
    ========================================== */
 
+.profile__avatar {
+  background: #ccc;
+  border-radius: 50%;
+  height: 220px;
+  margin: 0 auto;
+  width: 220px;
+}
 
 /* ==========================================
    Forms
@@ -119,7 +128,7 @@ h3 { font-size: 18px; }
   width: 100%
 }
 
-.textfield:focus {border-bottom: 1px solid #2196f3; }
+.textfield:focus { border-bottom: 1px solid #2196f3; }
 
 .textfield--textarea {
   height: 135px;
@@ -135,7 +144,7 @@ h3 { font-size: 18px; }
   background: #2196f3;
   border: none;
   color: #fff;
-  font-weight: 300;
+  font-weight: 500;
   margin: 2rem 0 0 0;
   padding: .8rem 1rem;
   width: 100%;
