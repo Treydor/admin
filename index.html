@@ -5,77 +5,67 @@ title: Admin page
 
 <form>
   <div class="box">
-    <div class="row cf">
-
+    <fieldset class="cf">
       <div class="column half">
         <label class="box__section-header">Account</label>
         <div class="row">
           <input class="textfield" placeholder="Username" type="text">
         </div>
-      <div class="row">
-        <input class="textfield" placeholder="Email" type="email">
+        <div class="row">
+          <input class="textfield" placeholder="Email" type="email">
+        </div>
+        <div class="row">
+          <input class="textfield" placeholder="Password" type="password">
+        </div>
+        <div class="row">
+          <input class="textfield" placeholder="Confirm Password" type="password">
+        </div>
       </div>
-      <div class="row">
-        <input class="textfield" placeholder="Password" type="password">
-      </div>
-      <div class="row">
-        <input class="textfield" placeholder="Confirm Password" type="password">
-      </div>
-    </div>
-
       <div class="column half">
         <div class="profile__avatar"></div>
-        <label>Status</label>
-          <select class="textfield">
-            <option value="online">Online</option>
-            <option value="busy">Busy</option>
-            <option value="away">Away</option>
-            <option value="offline">Offline</option>
-          </select>
       </div>
-
-    </div>
+    </fieldset>
   </div>
 
   <div class="box">
-    <div class="row">
-      <label class="box__section-header">Personal Information</label>
-      <input class="textfield" placeholder="Full name" type="text">
-    </div>
-
-    <div class="row">
-      <input class="textfield" placeholder="Street Address" type="text">
-    </div>
-
-    <div class="row">
-      <input class="textfield" placeholder="City" type="text">
-    </div>
-
-    <div class="row cf">
-      <div class="column half">
-        <input class="textfield" placeholder="State" type="text">
+    <fieldset>
+      <div class="row">
+        <label class="box__section-header">Personal</label>
+        <input class="textfield" placeholder="Full name" type="text">
       </div>
-      <div class="column half">
-        <input class="textfield" placeholder="Zip Code" type="number">
+      <div class="row">
+        <input class="textfield" placeholder="Street Address" type="text">
       </div>
-    </div>
-
-    <div class="row">
-      <div class="row__user--checkbox">
-        <label class="checkbox-label">
-          <input type="checkbox"><span class="keep-private">Keep my personal information private.</span>
-        </label>
+      <div class="row">
+        <input class="textfield" placeholder="City" type="text">
       </div>
-    </div>
+      <div class="row cf">
+        <div class="column half">
+          <input class="textfield" placeholder="State" type="text">
+        </div>
+        <div class="column half">
+          <input class="textfield" placeholder="Zip Code" type="number">
+        </div>
+      </div>
+      <div class="row">
+        <div class="row__user--checkbox">
+          <label class="checkbox-label">
+            <input type="checkbox"><span class="keep-private">Keep my personal information private.</span>
+          </label>
+        </div>
+      </div>
+    </fieldset>
   </div>
 
   <div class="box">
-    <div class="row">
-      <label class="box__section-header">About</label>
-      <textarea class="textfield textfield--textarea" placeholder="What are your hobbies?"></textarea>
-    </div>
+    <fieldset>
+      <div class="row">
+        <label class="box__section-header">About</label>
+        <textarea class="textfield textfield--textarea" placeholder="What are your hobbies?"></textarea>
+      </div>
+    </fieldset>
   </div>
 
-  <input class="button-primary" type="submit" value="Create">
+  <input class="button-primary" type="submit" value="Save">
 
 </form>
