@@ -206,7 +206,7 @@ fieldset {
   color: #000;
   display: block;
   outline: none;
-  padding: .8rem .5rem;
+  padding: .5rem 0;
   width: 100%
 }
 
@@ -250,34 +250,34 @@ input::-webkit-inner-spin-button {
   margin-left: .5rem;
 }
 
-.mail {
-  background: #fff  url('../images/icons/mail.png') left no-repeat;
+.account {
+  background: #fff  url('../images/icons/account.png') left no-repeat;
   background-size: 13px;
-  margin-bottom: 1rem;
+  margin-bottom: .7rem;
 }
 
 .lock {
   background: #fff  url('../images/icons/lock.png') left no-repeat;
   background-size: 13px;
-  margin-bottom: 1rem;
+  margin-bottom: .7rem;
 }
 
-.location {
-  background: #fff  url('../images/icons/location.png') left no-repeat;
+.personal {
+  background: #fff  url('../images/icons/personal.png') left no-repeat;
   background-size: 13px;
-  margin-bottom: 1rem;
+  margin-bottom: .7rem;
 }
 
 .about {
   background: #fff url('../images/icons/user.png') left no-repeat;
   background-size: 13px;
-  margin-bottom: 1rem;
+  margin-bottom: .7rem;
 }
 
 .notification {
   background: #fff url('../images/icons/notify.png') left no-repeat;
   background-size: 13px;
-  margin-bottom: 1.5rem;
+  margin-bottom: .7rem;
 }
 
 /* ==========================================
