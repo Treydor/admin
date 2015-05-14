@@ -158,12 +158,12 @@ nav li:first-child { margin-left: 0; }
 .profile__avatar {
   background: #fff url('../images/user.png') no-repeat;
   background-position: 50% 10%;
-  background-size: 54px;
+  background-size: 52px;
   border-radius: 50%;
-  height: 50px;
+  height: 48px;
   margin: 0 0 0 auto;
   position: relative;
-  width: 50px;
+  width: 48px;
 }
 
 .profile__avatar--change {
