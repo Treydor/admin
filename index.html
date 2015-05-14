@@ -9,9 +9,7 @@ title: Settings page project
         <h1 class="page-title">Settings</h1>
       </div>
       <div class="column two-thirds">
-        <div class="profile__avatar">
-          <div class="profile__avatar--change"></div>
-        </div>
+        <div class="profile__avatar"></div>
       </div>
     </div>
   </div>
@@ -21,7 +19,7 @@ title: Settings page project
   <form>
     <div class="box">
       <fieldset>
-        <legend class="box__section-header account">Account</legend>
+        <legend class="box__header account">Account</legend>
         <div class="row cf">
           <div class="column half">
             <input class="textfield" placeholder="Email" type="email">
@@ -35,7 +33,7 @@ title: Settings page project
 
     <div class="box">
       <fieldset>
-        <legend class="box__section-header lock">Password</legend>
+        <legend class="box__header lock">Password</legend>
         <div class="row cf">
           <div class="column half">
             <input class="textfield" placeholder="Password" type="password">
@@ -49,7 +47,7 @@ title: Settings page project
 
     <div class="box">
       <fieldset>
-        <legend class="box__section-header personal">Personal</legend>
+        <legend class="box__header personal">Personal</legend>
         <div class="row">
           <input class="textfield" placeholder="Full name" type="text">
         </div>
@@ -80,22 +78,16 @@ title: Settings page project
 
     <div class="box">
       <fieldset>
-        <legend class="box__section-header about">About</legend>
+        <legend class="box__header about">About</legend>
         <div class="row">
-          <textarea class="textfield textfield--textarea" placeholder="What are your hobbies?"></textarea>
-        </div>
-        <div class="row">
-          <textarea class="textfield textfield--textarea" placeholder="What kind of music do you like?"></textarea>
-        </div>
-        <div class="row">
-          <textarea class="textfield textfield--textarea" placeholder="What are your favorite movies?"></textarea>
+          <textarea class="textfield textfield--textarea" placeholder="Tell us about yourself (hobbies, goals, experience)"></textarea>
         </div>
       </fieldset>
     </div>
 
     <div class="box">
       <fieldset>
-        <legend class="box__section-header notification">Notification Preferences</legend>
+        <legend class="box__header notification">Notification Preferences</legend>
         <label class="radio-option">
           <input type="radio" name="notifications" value="all">
           <span class="radio-span">All</span>
