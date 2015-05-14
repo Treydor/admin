@@ -144,7 +144,7 @@ nav li:first-child { margin-left: 0; }
 }
 
 .profile__avatar--change {
-  background: rgba(0, 0, 0, 0.4) url('../images/icons/camera.png') center no-repeat;
+  background: rgba(0, 0, 0, 0.5) url('../images/icons/camera.png') center no-repeat;
   background-size: 22px;
   border-radius: 50%;
   display: none;
