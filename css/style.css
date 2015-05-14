@@ -12,7 +12,7 @@
   box-sizing: border-box;
 }
 
-html { font: 400 14px/1.5 "Roboto", sans-serif; }
+html { font: 400 16px/1.5 "Roboto", sans-serif; }
 
 body {
   background: #e5e5e5;
@@ -94,7 +94,7 @@ h3 { font-size: 18px; }
    Navigation
    ========================================== */
 
-nav { font-size: 14px; }
+nav { font-size: 15px; }
 
 nav a {
   color: #55a0eb;
@@ -116,7 +116,7 @@ nav ul {
 
 nav li {
   display: inline-block;
-  margin-left: .5rem;
+  margin-left: .8rem;
 }
 
 nav li:first-child { margin-left: 0; }
@@ -144,8 +144,8 @@ nav li:first-child { margin-left: 0; }
   color: #2196f3;
   font-size: 14px;
   font-weight: 600;
-  margin-bottom: 1rem;
-  padding: 0;
+  margin-bottom: .5rem;
+  padding-left: 20px;
   text-transform: uppercase;
 }
 
@@ -156,9 +156,9 @@ nav li:first-child { margin-left: 0; }
    ========================================== */
 
 .profile__avatar {
-  background: #ccc url('../images/no-user.jpg');
-  background-position: 50%;
-  background-size: cover;
+  background: #fff url('../images/user.png') no-repeat;
+  background-position: 50% 10%;
+  background-size: 54px;
   border-radius: 50%;
   height: 50px;
   margin: 0 0 0 auto;
@@ -206,7 +206,7 @@ fieldset {
   color: #000;
   display: block;
   outline: none;
-  padding: .8rem 1rem;
+  padding: .8rem .5rem;
   width: 100%
 }
 
@@ -222,10 +222,10 @@ fieldset {
   border: none;
   color: #fff;
   display: block;
-  font-weight: 500;
+  font-weight: 400;
   margin: 0;
   padding: 1rem;
-  width: 175px;
+  width: 100%;
 }
 
 .button-primary:hover { background: #1e88e5; }
@@ -248,6 +248,33 @@ input::-webkit-inner-spin-button {
 
 .checkbox-option span, .radio-option span {
   margin-left: .5rem;
+}
+
+.mail {
+  background: #fff  url('../images/icons/mail.png') left no-repeat;
+  background-size: 13px;
+}
+
+.lock {
+  background: #fff  url('../images/icons/lock.png') left no-repeat;
+  background-size: 13px;
+  margin-bottom: 1rem;
+}
+
+.location {
+  background: #fff  url('../images/icons/location.png') left no-repeat;
+  background-size: 13px;
+  margin-bottom: 1rem;
+}
+
+.about {
+  background: #fff url('../images/icons/user.png') left no-repeat;
+  background-size: 13px;
+}
+
+.notification {
+  background: #fff url('../images/icons/notify.png') left no-repeat;
+  background-size: 13px;
 }
 
 /* ==========================================
