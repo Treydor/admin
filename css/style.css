@@ -15,7 +15,7 @@
 html { font: 400 15px/1.5 "Roboto", sans-serif; }
 
 body {
-  background: #e5e5e5;
+  background: #eee;
   color: #212121;
   margin: 0 0 5rem 0;
   padding: 0;
@@ -157,10 +157,10 @@ nav li:first-child { margin-left: 0; }
 }
 
 .box {
-  background: #fff;
-  border: 1px solid #dedede;
+  background: #fafafa;
+  box-shadow: 1px 1px 3px #ddd;
   margin-bottom: 2rem;
-  padding: 1.5rem;
+  padding: 2rem;
 }
 
 .box__header {
@@ -174,31 +174,31 @@ nav li:first-child { margin-left: 0; }
 }
 
 .account {
-  background: #fff url('../images/icons/account.png') left no-repeat;
+  background: url('../images/icons/account.png') left no-repeat;
   background-size: 13px;
   margin-bottom: 1rem;
 }
 
 .lock {
-  background: #fff  url('../images/icons/lock.png') left no-repeat;
+  background: url('../images/icons/lock.png') left no-repeat;
   background-size: 13px;
   margin-bottom: 1rem;
 }
 
 .personal {
-  background: #fff  url('../images/icons/personal.png') left no-repeat;
+  background: url('../images/icons/personal.png') left no-repeat;
   background-size: 13px;
   margin-bottom: 1rem;
 }
 
 .about {
-  background: #fff url('../images/icons/user.png') left no-repeat;
+  background: url('../images/icons/user.png') left no-repeat;
   background-size: 13px;
   margin-bottom: 1rem;
 }
 
 .notification {
-  background: #fff url('../images/icons/notify.png') left no-repeat;
+  background: url('../images/icons/notify.png') left no-repeat;
   background-size: 13px;
   margin-bottom: 1rem;
 }
@@ -214,7 +214,7 @@ fieldset {
 }
 
 .textfield {
-  background: #fff;
+  background: #fafafa;
   border: none;
   border-bottom: 1px solid #ddd;
   color: #000;
@@ -224,9 +224,7 @@ fieldset {
   width: 100%
 }
 
-.textfield:focus {
-  background: #fafafa;
-  border-bottom: 1px solid #2196f3; }
+.textfield:focus { border-bottom: 1px solid #2196f3; }
 
 .textfield--textarea {
   height: 135px;
