@@ -190,10 +190,10 @@ nav li:first-child { margin-left: 0; }
 
 .avatar--large {
   background-position: 50% 10px;
-  background-size: 120px;
-  margin: 0 auto 1rem auto;
-  height: 120px;
-  width: 120px;
+  background-size: 100px;
+  margin: 0 auto;
+  height: 100px;
+  width: 100px;
 }
 
 .avatar--small {
@@ -218,7 +218,7 @@ nav li:first-child { margin-left: 0; }
 }
 
 .profile-box {
-  margin: 0 auto 2rem auto;
+  margin: 0 auto 3rem auto;
 }
 
 .profile-list {
