@@ -3,7 +3,7 @@
    ========================================== */
 
 /* ==========================================
-   Basic styles
+   Basic page elements
    ========================================== */
 
 *, *:before, *:after {
@@ -16,7 +16,7 @@ html { font: 400 16px/1.5 "Roboto", sans-serif; }
 
 body {
   background: #e5e5e5;
-  color: #000;
+  color: #212121;
   margin: 0 0 5rem 0;
   padding: 0;
 }
@@ -30,7 +30,7 @@ header {
 
 .container {
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 540px;
   width: 90%;
 }
 
@@ -52,7 +52,7 @@ header {
 
 .two-thirds { width: 64.5%; }
 
-.half { width: 47.4%; }
+.half { width: 48%; }
 
 @media screen and (max-width: 500px) {
   .half {
@@ -97,15 +97,15 @@ h3 { font-size: 18px; }
 nav { font-size: 15px; }
 
 nav a {
-  color: #55a0eb;
+  color: #64b5f6;
   text-decoration: none;
 }
 
-nav a:hover { color: #a1cbf4; }
+nav a:hover { color: #bbdefb; }
 
 .current {
   cursor: default;
-  color: #a1cbf4;
+  color: #bbdefb;
 }
 
 nav ul {
@@ -132,29 +132,6 @@ nav li:first-child { margin-left: 0; }
   width: 100%;
 }
 
-.box {
-  background: #fff;
-  border: 1px solid #dedede;
-  margin-bottom: 2rem;
-  padding: 2rem;
-}
-
-.box__section-header {
-  display: block;
-  color: #2196f3;
-  font-size: 14px;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  padding-left: 20px;
-  text-transform: uppercase;
-}
-
-.row__user--checkbox { margin-top: 2rem; }
-
-/* ==========================================
-   Profile
-   ========================================== */
-
 .profile__avatar {
   background: #fff url('../images/user.png') no-repeat;
   background-position: 50% 10%;
@@ -166,27 +143,51 @@ nav li:first-child { margin-left: 0; }
   width: 48px;
 }
 
-.profile__avatar--change {
-  background: #82b1ff;
-  background-size: 33px 139px;
-  border-radius: 50%;
-  cursor: pointer;
-  height: 20px;
-  position: absolute;
-  width: 20px;
-  right: 0;
-  top: 35px;
+.box {
+  background: #fff;
+  border: 1px solid #dedede;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
 }
 
-.profile__avatar--change:hover:before { color: #fff176; }
+.box__header {
+  color: #2196f3;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding-left: 20px;
+  text-transform: uppercase;
+  width: 100%;
+}
 
-.profile__avatar--change:before {
-  color: #fff;
-  content: "+";
-  display: block;
-  font-size: 14px;
-  line-height: 20px;
-  text-align: center;
+.account {
+  background: #fff url('../images/icons/account.png') left no-repeat;
+  background-size: 13px;
+  margin-bottom: 1rem;
+}
+
+.lock {
+  background: #fff  url('../images/icons/lock.png') left no-repeat;
+  background-size: 13px;
+  margin-bottom: 1rem;
+}
+
+.personal {
+  background: #fff  url('../images/icons/personal.png') left no-repeat;
+  background-size: 13px;
+  margin-bottom: 1rem;
+}
+
+.about {
+  background: #fff url('../images/icons/user.png') left no-repeat;
+  background-size: 13px;
+  margin-bottom: 1rem;
+}
+
+.notification {
+  background: #fff url('../images/icons/notify.png') left no-repeat;
+  background-size: 13px;
+  margin-bottom: 1rem;
 }
 
 /* ==========================================
@@ -206,15 +207,17 @@ fieldset {
   color: #000;
   display: block;
   outline: none;
-  padding: .5rem 0;
+  padding: .5rem 5px;
   width: 100%
 }
 
-.textfield:focus { border-bottom: 1px solid #2196f3; }
+.textfield:focus {
+  background: #fafafa;
+  border-bottom: 1px solid #2196f3; }
 
 .textfield--textarea {
-  height: 84px;
-  resize: none;
+  height: 135px;
+  resize: vertical;
 }
 
 .button-primary {
@@ -236,6 +239,8 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+.row__user--checkbox { margin-top: 2rem; }
+
 .checkbox-option {
   cursor: pointer;
   display: block;
@@ -244,40 +249,13 @@ input::-webkit-inner-spin-button {
 .radio-option {
   cursor: pointer;
   display: block;
+  margin-bottom: .2rem;
 }
+
+.radio-option:last-child { margin-bottom: 0; }
 
 .checkbox-option span, .radio-option span {
   margin-left: .5rem;
-}
-
-.account {
-  background: #fff  url('../images/icons/account.png') left no-repeat;
-  background-size: 13px;
-  margin-bottom: .7rem;
-}
-
-.lock {
-  background: #fff  url('../images/icons/lock.png') left no-repeat;
-  background-size: 13px;
-  margin-bottom: .7rem;
-}
-
-.personal {
-  background: #fff  url('../images/icons/personal.png') left no-repeat;
-  background-size: 13px;
-  margin-bottom: .7rem;
-}
-
-.about {
-  background: #fff url('../images/icons/user.png') left no-repeat;
-  background-size: 13px;
-  margin-bottom: .7rem;
-}
-
-.notification {
-  background: #fff url('../images/icons/notify.png') left no-repeat;
-  background-size: 13px;
-  margin-bottom: .7rem;
 }
 
 /* ==========================================
