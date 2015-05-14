@@ -12,7 +12,7 @@
   box-sizing: border-box;
 }
 
-html { font: 400 16px/1.5 "Roboto", sans-serif; }
+html { font: 400 15px/1.5 "Roboto", sans-serif; }
 
 body {
   background: #e5e5e5;
@@ -141,6 +141,19 @@ nav li:first-child { margin-left: 0; }
   margin: 0 0 0 auto;
   position: relative;
   width: 48px;
+}
+
+.profile__avatar--change {
+  background: rgba(0, 0, 0, 0.4) url('../images/icons/camera.png') center no-repeat;
+  background-size: 22px;
+  border-radius: 50%;
+  display: none;
+  height: 48px;
+  width: 48px;
+}
+
+.profile__avatar:hover .profile__avatar--change {
+  display: block;
 }
 
 .box {
