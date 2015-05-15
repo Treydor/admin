@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Settings page project
+title: Settings
 ---
 <div class="page-heading">
   <div class="container">
@@ -10,17 +10,21 @@ title: Settings page project
 
 <div class="container">
   <div class="profile-box">
+
+  </div>
+
+  <div class="profile-box">
     <div class="avatar avatar--large"></div>
     <ul class="profile-list">
-      <li>Add/Change</li>
-      <li class="remove">Remove</li>
+      <li class="profile-list__button">Change</li>
+      <li class="profile-list__button remove">Remove</li>
     </ul>
   </div>
 
   <form>
     <div class="box">
       <fieldset>
-        <legend class="box__header account">Account</legend>
+        <legend class="box__header email">Email</legend>
         <div class="row cf">
           <div class="column half">
             <input class="textfield" placeholder="Email" type="email">
@@ -88,11 +92,17 @@ title: Settings page project
 
     <div class="box">
       <fieldset>
-        <legend class="box__header notification">Notifications</legend>
+        <legend class="box__header notification"> Notifications</legend>
         <div class="radio-wrapper">
           <label class="radio-option">
             <input type="radio" name="notifications" value="all">
-            <span class="radio-span">Recieve all</span>
+            <span class="radio-span">All</span>
+          </label>
+        </div>
+        <div class="radio-wrapper">
+          <label class="radio-option">
+            <input type="radio" name="notifications" value="important">
+            <span class="radio-span">Important only</span>
           </label>
         </div>
         <div class="radio-wrapper">
