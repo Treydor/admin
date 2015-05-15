@@ -34,6 +34,12 @@ header {
   width: 90%;
 }
 
+a { color: #727272; }
+
+/* ==========================================
+   Structure
+   ========================================== */
+
 .row { margin-bottom: 1rem; }
 
 .row:last-child { margin: 0;  }
@@ -50,8 +56,6 @@ header {
   width: 100%;
 }
 
-.two-thirds { width: 64.5%; }
-
 .half { width: 48%; }
 
 @media screen and (max-width: 500px) {
@@ -61,29 +65,27 @@ header {
   }
 }
 
-.third { width: 31.5%; }
+.nav__wrapper { width: 93.5%; }
+
+.avatar--small__wrapper {
+  margin: 0;
+  width: 22px;
+}
 
 /* ==========================================
    Typography
    ========================================== */
 
 h1, h2, h3, h4 {
-  font-weight: 400;
+  font-weight: 500;
   margin: 0 0 1rem 0;
   padding: 0;
 }
 
 h1 {
   font-weight: 300;
-  font-size: 32px;
+  font-size: 2.2rem;
 }
-
-h2 {
-  font-weight: 500;
-  font-size: 20px;
-}
-
-h3 { font-size: 18px; }
 
 .page-title {
   color: #fff;
@@ -93,8 +95,6 @@ h3 { font-size: 18px; }
 /* ==========================================
    Navigation
    ========================================== */
-
-nav { font-size: 15px; }
 
 nav a {
   color: #42a5f5;
@@ -116,7 +116,7 @@ nav ul {
 
 nav li {
   display: inline-block;
-  margin-left: .8rem;
+  margin-left: .7em;
 }
 
 nav li:first-child { margin-left: 0; }
@@ -134,14 +134,14 @@ nav li:first-child { margin-left: 0; }
 
 .box {
   background: #fafafa;
-  box-shadow: 1px 1px 3px #ddd;
+  box-shadow: 1px 1px 3px #d6d6d6;
   margin-bottom: 2rem;
   padding: 2rem;
 }
 
 .box__header {
   color: #2196f3;
-  font-size: 15px;
+  font-size: .9rem;
   font-weight: 600;
   margin-bottom: 1rem;
   padding-left: 20px;
@@ -190,10 +190,10 @@ nav li:first-child { margin-left: 0; }
 
 .avatar--large {
   background-position: 50% 10px;
-  background-size: 120px;
+  background-size: 160px;
   margin: 0 auto;
-  height: 120px;
-  width: 120px;
+  height: 160px;
+  width: 160px;
 }
 
 .avatar--small {
@@ -218,51 +218,31 @@ nav li:first-child { margin-left: 0; }
 }
 
 .profile-box {
-  margin: 0 auto 3rem auto;
+  margin: 0 auto 1rem auto;
+  padding: 1rem;
 }
 
 .profile-list {
   list-style: none;
-  margin: 0;
+  margin: 1rem 0 0 0;
   padding: 0;
-}
-
-@media screen and (max-width: 500px) {
-  .profile-list {
-    margin-bottom: 2rem;
-    text-align: center;
-  }
+  text-align: center;
 }
 
 .profile-list li {
-  color: #999;
-  font-size: 14px;
-  padding-left: 18px;
-  margin-top: .5rem;
-}
-
-@media screen and (max-width: 500px) {
-  .profile-list li {
-    display: inline-block;
-    margin-left: 1rem;
-    text-align: center;
-  }
-}
-
-.add {
-  background: url('../images/icons/add-image.png') left no-repeat;
-  background-size: 12px;
+  background: #536dfe;
+  color: #fff;
   cursor: pointer;
+  display: inline-block;
+  font-size: .9rem;
+  margin: 0 auto;
+  padding: .5rem;
+  width: 110px;
 }
 
-.remove {
-  background: url('../images/icons/remove.png') left no-repeat;
-  background-size: 10px;
-  cursor: pointer;
-}
+.remove { background: yellow; }
 
-.profile-list li:first-child { margin-left: 0; }
-
+.profile-list li:first-child { margin-top: 0; }
 
 /* ==========================================
    Forms
@@ -293,7 +273,7 @@ fieldset {
 }
 
 .button-primary {
-  background: #2196f3;
+  background: #536dfe;
   border: none;
   border-radius: 2px;
   color: #fff;
@@ -312,7 +292,7 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-.row__checkbox { margin-top: 2rem; }
+.checkbox-wrapper { margin-top: 2rem; }
 
 .checkbox-option {
   cursor: pointer;
