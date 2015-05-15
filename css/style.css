@@ -22,7 +22,7 @@ body {
 }
 
 header {
-  background: #455A64;
+  background: #455a64;
   color: #fff;
   padding: .8rem;
   width: 100%;
@@ -101,14 +101,14 @@ h1 {
  }
 
 nav a {
-  color: #78909C;
+  color: #78909c;
   text-decoration: none;
 }
 
-nav a:hover { color: #CFD8DC; }
+nav a:hover { color: #cfd8dc; }
 
 .current {
-  color: #CFD8DC;
+  color: #cfd8dc;
   cursor: default;
 }
 
@@ -130,7 +130,7 @@ nav li:first-child { margin-left: 0; }
    ========================================== */
 
 .page-heading {
-  background: #607D8B;
+  background: #607d8b;
   margin-bottom: 3rem;
   padding: 2rem;
   width: 100%;
@@ -144,7 +144,7 @@ nav li:first-child { margin-left: 0; }
 }
 
 .box__header {
-  color: #607D8B;
+  color: #607d8b;
   font-size: .9rem;
   font-weight: 600;
   margin-bottom: 1rem;
@@ -234,7 +234,7 @@ nav li:first-child { margin-left: 0; }
 }
 
 .profile-list li {
-  background: #8BC34A;
+  background: #8bc34a;
   border-radius: 2px;
   color: #fff;
   cursor: pointer;
@@ -246,7 +246,7 @@ nav li:first-child { margin-left: 0; }
   width: 110px;
 }
 
-.profile-list li:hover { background: #7CB342; }
+.profile-list li:hover { background: #7cb342; }
 
 .remove { background: yellow; }
 
@@ -273,7 +273,7 @@ fieldset {
   width: 100%
 }
 
-.textfield:focus { border-bottom: 1px solid #8BC34A; }
+.textfield:focus { border-bottom: 1px solid #8bc34a; }
 
 .textfield--textarea {
   height: 135px;
@@ -281,7 +281,7 @@ fieldset {
 }
 
 .button-primary {
-  background: #8BC34A;
+  background: #8bc34a;
   border: none;
   border-radius: 2px;
   color: #fff;
@@ -292,7 +292,7 @@ fieldset {
   width: 100%;
 }
 
-.button-primary:hover { background: #7CB342; }
+.button-primary:hover { background: #7cb342; }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
