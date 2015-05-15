@@ -5,7 +5,7 @@
 .color-primary { #607d8b; }
 .color-dark-primary { #455a64; }
 .color-light-primary { #cfd8dc; }
-.color-accent { #8bc34a; }
+.color-accent { #4caf50; }
 .color-background { #eee; }
 .color-text { #212121; }
 
@@ -106,6 +106,10 @@ h1 {
 nav a {
   color: #78909c;
   text-decoration: none;
+  -webkit-transition: color .3s ease;
+  -moz-transition: color .3s ease;
+  -o-transition: color .3s ease;
+  transition: color .3s ease;
 }
 
 nav a:hover { color: #cfd8dc; }
@@ -141,7 +145,7 @@ nav li:first-child { margin-left: 0; }
 
 .box {
   background: #fafafa;
-  border-radius: 3px;
+  border-radius: 2px;
   box-shadow: 1px 1px 3px #d6d6d6;
   margin-bottom: 2rem;
   padding: 2rem;
@@ -214,7 +218,8 @@ nav li:first-child { margin-left: 0; }
   width: 22px;
 }
 
-/*.avatar--large .change {
+/*
+.avatar--large .change {
   background: rgba(0, 0, 0, 0.3) url('../images/icons/camera.png') center no-repeat;
   background-size: 32px;
   border-radius: 50%;
@@ -223,9 +228,8 @@ nav li:first-child { margin-left: 0; }
   width: 160px;
 }
 
-.avatar--large:hover .change {
-  display: block;
-}*/
+.avatar--large:hover .change { display: block; }
+*/
 
 .profile-box { margin: 0 auto 2.5rem auto; }
 
@@ -243,21 +247,21 @@ nav li:first-child { margin-left: 0; }
 }
 
 .profile-list__button a {
-  background: #8bc34a;
-  border-radius: 3px;
+  background: #4caf50;
+  border-radius: 2px;
   color: #fff;
   display: inline-block;
   font-weight: 500;
   padding: .4em 0;
   text-decoration: none;
   width: 90px;
-  -webkit-transition: background 0.3s ease;
-  -moz-transition: background 0.3s ease;
-  -o-transition: background 0.3s ease;
-  transition: background 0.3s ease;
+  -webkit-transition: background .3s ease;
+  -moz-transition: background .3s ease;
+  -o-transition: background .3s ease;
+  transition: background .3s ease;
 }
 
-.profile-list__button a:hover { background: #7cb342; }
+.profile-list__button a:hover { background: #66bb6a; }
 
 /* ==========================================
    Forms
@@ -271,16 +275,16 @@ fieldset {
 
 .textfield {
   border: 1px solid #eee;
-  border-radius: 3px;
+  border-radius: 2px;
   color: #212121;
   display: block;
   outline: none;
   padding: .8rem;
   width: 100%;
-  -webkit-transition: border 0.3s ease;
-  -moz-transition: border 0.3s ease;
-  -o-transition: border 0.3s ease;
-  transition: border 0.3s ease;
+  -webkit-transition: border .3s ease;
+  -moz-transition: border .3s ease;
+  -o-transition: border .3s ease;
+  transition: border .3s ease;
 }
 
 .textfield:focus { border: 1px solid #c6c6c6; }
@@ -291,22 +295,22 @@ fieldset {
 }
 
 .button-primary {
-  background: #8bc34a;
+  background: #4caf50;
   border: none;
-  border-radius: 3px;
+  border-radius: 2px;
   color: #fff;
   display: block;
   font-weight: 500;
   margin: 0 auto;
-  padding: .8rem;
-  width: 200px;
-  -webkit-transition: background 0.3s ease;
-  -moz-transition: background 0.3s ease;
-  -o-transition: background 0.3s ease;
-  transition: background 0.3s ease;
+  padding: 1rem;
+  width: 100%;
+  -webkit-transition: background .3s ease;
+  -moz-transition: background .3s ease;
+  -o-transition: background .3s ease;
+  transition: background .3s ease;
 }
 
-.button-primary:hover { background: #7cb342; }
+.button-primary:hover { background: #66bb6a; }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
