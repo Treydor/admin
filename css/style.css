@@ -270,7 +270,7 @@ fieldset {
   width: 100%
 }
 
-.textfield:focus { border-bottom: 1px solid #2196f3; }
+.textfield:focus { border-bottom: 1px solid #536dfe; }
 
 .textfield--textarea {
   height: 135px;
