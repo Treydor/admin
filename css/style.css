@@ -96,6 +96,10 @@ h1 {
    Navigation
    ========================================== */
 
+ @media screen and (max-width: 370px) {
+   nav { font-size: .9rem; }
+ }
+
 nav a {
   color: #42a5f5;
   text-decoration: none;
@@ -234,7 +238,8 @@ nav li:first-child { margin-left: 0; }
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-size: .9rem;
+  font-size: .8rem;
+  font-weight: 500;
   margin: 0 auto;
   padding: .5rem;
   width: 110px;
