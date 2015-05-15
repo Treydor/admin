@@ -2,6 +2,13 @@
    Style guide
    ========================================== */
 
+.color-primary { #607d8b; }
+.color-dark-primary { #455a64; }
+.color-light-primary { #cfd8dc; }
+.color-accent { #8bc34a; }
+.color-background { #eee; }
+.color-text { #212121; }
+
 /* ==========================================
    Basic page elements
    ========================================== */
@@ -24,7 +31,7 @@ body {
 header {
   background: #455a64;
   color: #fff;
-  padding: .8rem;
+  padding: .5rem 0;
   width: 100%;
 }
 
@@ -65,11 +72,11 @@ a { color: #727272; }
   }
 }
 
-.nav__wrapper { width: 90%; }
+.nav__wrapper { width: 85%; }
 
 .avatar--small__wrapper {
   margin: 0;
-  width: 10%;
+  width: 15%;
 }
 
 /* ==========================================
@@ -153,8 +160,8 @@ nav li:first-child { margin-left: 0; }
   width: 100%;
 }
 
-.account {
-  background: url('../images/icons/account.png') left no-repeat;
+.email {
+  background: url('../images/icons/email.png') left no-repeat;
   background-size: 13px;
   margin-bottom: 1rem;
 }
@@ -191,21 +198,22 @@ nav li:first-child { margin-left: 0; }
   background: #fff url('../images/user.png') no-repeat;
   border-radius: 50%;
   cursor: pointer;
+  padding: 0;
 }
 
 .avatar--large {
   background-position: 50% 10px;
-  background-size: 160px;
+  background-size: 140px;
   margin: 0 auto;
-  height: 160px;
-  width: 160px;
+  height: 140px;
+  width: 140px;
 }
 
 .avatar--small {
   background-position: 50% 10%;
   background-size: 24px;
+  float: right;
   height: 22px;
-  margin-left: auto;
   width: 22px;
 }
 
@@ -231,24 +239,19 @@ nav li:first-child { margin-left: 0; }
   text-align: center;
 }
 
-.profile-list li {
+.profile-list__button {
   background: #8bc34a;
-  border-radius: 2px;
   color: #fff;
   cursor: pointer;
   display: inline-block;
   font-size: .9rem;
   font-weight: 500;
-  margin: 0 auto;
-  padding: .6em;
-  width: 110px;
+  margin-left: 5px;
+  padding: .4em 0;
+  width: 90px;
 }
 
-.profile-list li:hover { background: #7cb342; }
-
-.remove { background: yellow; }
-
-.profile-list li:first-child { margin-top: 0; }
+.profile-list__button:hover { background: #7cb342; }
 
 /* ==========================================
    Forms
@@ -281,7 +284,6 @@ fieldset {
 .button-primary {
   background: #8bc34a;
   border: none;
-  border-radius: 2px;
   color: #fff;
   display: block;
   font-weight: 500;
