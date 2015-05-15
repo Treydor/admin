@@ -251,6 +251,10 @@ nav li:first-child { margin-left: 0; }
   padding: .4em 0;
   text-decoration: none;
   width: 90px;
+  -webkit-transition: background 0.3s ease;
+  -moz-transition: background 0.3s ease;
+  -o-transition: background 0.3s ease;
+  transition: background 0.3s ease;
 }
 
 .profile-list__button a:hover { background: #7cb342; }
@@ -268,18 +272,18 @@ fieldset {
 .textfield {
   border: 1px solid #e6e6e6;
   border-radius: 3px;
-  color: #000;
+  color: #212121;
   display: block;
   outline: none;
   padding: .6rem;
   width: 100%;
-  -webkit-transition: background 0.3s ease;
-  -moz-transition: background 0.3s ease;
-  -o-transition: background 0.3s ease;
-  transition: background 0.3s ease;
+  -webkit-transition: border 0.3s ease;
+  -moz-transition: border 0.3s ease;
+  -o-transition: border 0.3s ease;
+  transition: border 0.3s ease;
 }
 
-.textfield:focus { border: 1px solid #d3d3d3; }
+.textfield:focus { border: 1px solid #ccc; }
 
 .textfield--textarea {
   height: 135px;
@@ -296,6 +300,10 @@ fieldset {
   margin: 0;
   padding: 1rem;
   width: 100%;
+  -webkit-transition: background 0.3s ease;
+  -moz-transition: background 0.3s ease;
+  -o-transition: background 0.3s ease;
+  transition: background 0.3s ease;
 }
 
 .button-primary:hover { background: #7cb342; }
