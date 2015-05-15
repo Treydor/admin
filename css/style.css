@@ -190,6 +190,7 @@ nav li:first-child { margin-left: 0; }
 .avatar {
   background: #fff url('../images/user.png') no-repeat;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .avatar--large {
@@ -208,23 +209,20 @@ nav li:first-child { margin-left: 0; }
   width: 22px;
 }
 
-.avatar--small .change {
+/*.avatar--large .change {
   background: rgba(0, 0, 0, 0.3) url('../images/icons/camera.png') center no-repeat;
-  background-size: 12px;
+  background-size: 32px;
   border-radius: 50%;
   display: none;
-  height: 22px;
-  width: 22px;
+  height: 160px;
+  width: 160px;
 }
 
-.avatar--small:hover .change {
+.avatar--large:hover .change {
   display: block;
-}
+}*/
 
-.profile-box {
-  margin: 0 auto 1rem auto;
-  padding: 1rem;
-}
+.profile-box { margin: 0 auto 2.5rem auto; }
 
 .profile-list {
   list-style: none;
