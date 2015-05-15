@@ -283,7 +283,7 @@ fieldset {
   transition: border 0.3s ease;
 }
 
-.textfield:focus { border: 1px solid #ccc; }
+.textfield:focus { border: 1px solid #c6c6c6; }
 
 .textfield--textarea {
   height: 135px;
