@@ -312,9 +312,7 @@ input::-webkit-inner-spin-button {
 
 .radio-option:last-child { margin-bottom: 0; }
 
-.checkbox-option span, .radio-option span {
-  margin-left: .5rem;
-}
+.checkbox-option span, .radio-option span { margin-left: .5rem; }
 
 /* ==========================================
    Clearfix
