@@ -193,7 +193,7 @@ nav li:first-child { margin-left: 0; }
 .avatar {
   background: #fff url('../images/user.png') no-repeat;
   border-radius: 50%;
-  cursor: pointer;
+  display: block;
   padding: 0;
 }
 
@@ -236,18 +236,22 @@ nav li:first-child { margin-left: 0; }
 }
 
 .profile-list__button {
-  background: #8bc34a;
-  color: #fff;
-  cursor: pointer;
   display: inline-block;
   font-size: .9rem;
-  font-weight: 500;
   margin-left: 5px;
+}
+
+.profile-list__button a {
+  background: #8bc34a;
+  color: #fff;
+  display: inline-block;
+  font-weight: 500;
   padding: .4em 0;
+  text-decoration: none;
   width: 90px;
 }
 
-.profile-list__button:hover { background: #7cb342; }
+.profile-list__button a:hover { background: #7cb342; }
 
 /* ==========================================
    Forms
