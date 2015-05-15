@@ -22,7 +22,7 @@ body {
 }
 
 header {
-  background: #1976d2;
+  background: #455A64;
   color: #fff;
   padding: .8rem;
   width: 100%;
@@ -84,7 +84,7 @@ h1, h2, h3, h4 {
 
 h1 {
   font-weight: 300;
-  font-size: 2.2rem;
+  font-size: 34px;
 }
 
 .page-title {
@@ -101,14 +101,14 @@ h1 {
  }
 
 nav a {
-  color: #42a5f5;
+  color: #78909C;
   text-decoration: none;
 }
 
-nav a:hover { color: #bbdefb; }
+nav a:hover { color: #CFD8DC; }
 
 .current {
-  color: #bbdefb;
+  color: #CFD8DC;
   cursor: default;
 }
 
@@ -130,7 +130,7 @@ nav li:first-child { margin-left: 0; }
    ========================================== */
 
 .page-heading {
-  background: #2196f3;
+  background: #607D8B;
   margin-bottom: 3rem;
   padding: 2rem;
   width: 100%;
@@ -144,7 +144,7 @@ nav li:first-child { margin-left: 0; }
 }
 
 .box__header {
-  color: #2196f3;
+  color: #607D8B;
   font-size: .9rem;
   font-weight: 600;
   margin-bottom: 1rem;
@@ -160,19 +160,19 @@ nav li:first-child { margin-left: 0; }
 }
 
 .lock {
-  background: url('../images/icons/lock.png') left no-repeat;
+  background: url('../images/icons/password.png') left no-repeat;
   background-size: 13px;
   margin-bottom: 1rem;
 }
 
 .personal {
-  background: url('../images/icons/personal.png') left no-repeat;
+  background: url('../images/icons/pin.png') left no-repeat;
   background-size: 13px;
   margin-bottom: 1rem;
 }
 
 .about {
-  background: url('../images/icons/user.png') left no-repeat;
+  background: url('../images/icons/about.png') left no-repeat;
   background-size: 13px;
   margin-bottom: 1rem;
 }
@@ -234,16 +234,19 @@ nav li:first-child { margin-left: 0; }
 }
 
 .profile-list li {
-  background: #536dfe;
+  background: #8BC34A;
+  border-radius: 2px;
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-size: .8rem;
+  font-size: .9rem;
   font-weight: 500;
   margin: 0 auto;
-  padding: .5rem;
+  padding: .6em;
   width: 110px;
 }
+
+.profile-list li:hover { background: #7CB342; }
 
 .remove { background: yellow; }
 
@@ -270,7 +273,7 @@ fieldset {
   width: 100%
 }
 
-.textfield:focus { border-bottom: 1px solid #536dfe; }
+.textfield:focus { border-bottom: 1px solid #8BC34A; }
 
 .textfield--textarea {
   height: 135px;
@@ -278,8 +281,9 @@ fieldset {
 }
 
 .button-primary {
-  background: #536dfe;
+  background: #8BC34A;
   border: none;
+  border-radius: 2px;
   color: #fff;
   display: block;
   font-weight: 500;
@@ -287,6 +291,8 @@ fieldset {
   padding: 1rem;
   width: 100%;
 }
+
+.button-primary:hover { background: #7CB342; }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
