@@ -103,10 +103,6 @@ h1 {
    Navigation
    ========================================== */
 
- @media screen and (max-width: 370px) {
-   nav { font-size: .9rem; }
- }
-
 nav a {
   color: #78909c;
   text-decoration: none;
