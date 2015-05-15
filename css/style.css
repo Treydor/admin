@@ -37,7 +37,7 @@ header {
 
 .container {
   margin: 0 auto;
-  max-width: 540px;
+  max-width: 600px;
   width: 90%;
 }
 
@@ -141,6 +141,7 @@ nav li:first-child { margin-left: 0; }
 
 .box {
   background: #fafafa;
+  border-radius: 3px;
   box-shadow: 1px 1px 3px #d6d6d6;
   margin-bottom: 2rem;
   padding: 2rem;
@@ -243,6 +244,7 @@ nav li:first-child { margin-left: 0; }
 
 .profile-list__button a {
   background: #8bc34a;
+  border-radius: 3px;
   color: #fff;
   display: inline-block;
   font-weight: 500;
@@ -264,17 +266,20 @@ fieldset {
 }
 
 .textfield {
-  background: #fafafa;
-  border: none;
-  border-bottom: 1px solid #ddd;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
   color: #000;
   display: block;
   outline: none;
-  padding: .5rem 5px;
-  width: 100%
+  padding: .6rem;
+  width: 100%;
+  -webkit-transition: background 0.3s ease;
+  -moz-transition: background 0.3s ease;
+  -o-transition: background 0.3s ease;
+  transition: background 0.3s ease;
 }
 
-.textfield:focus { border-bottom: 1px solid #8bc34a; }
+.textfield:focus { border: 1px solid #d3d3d3; }
 
 .textfield--textarea {
   height: 135px;
@@ -284,6 +289,7 @@ fieldset {
 .button-primary {
   background: #8bc34a;
   border: none;
+  border-radius: 3px;
   color: #fff;
   display: block;
   font-weight: 500;
