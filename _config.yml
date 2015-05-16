@@ -1,7 +1,7 @@
 # Site settings
 title: Settings Page
 description: A simple settings page project.
-baseurl: "/settings"
+baseurl: "/settings-page"
 
 # Build settings
 markdown: kramdown
