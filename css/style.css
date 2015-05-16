@@ -129,7 +129,7 @@ nav ul {
 
 nav li {
   display: inline-block;
-  margin-left: .7em;
+  margin-left: 1rem;
 }
 
 nav li:first-child { margin-left: 0; }
@@ -268,8 +268,8 @@ fieldset {
 .textfield:focus { border: 1px solid #c6c6c6; }
 
 .textfield--textarea {
-  height: 135px;
-  resize: vertical;
+  height: 180px;
+  resize: none;
 }
 
 .button-primary {
