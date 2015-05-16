@@ -1,7 +1,7 @@
 # Site settings
-title: Admin
-description: A simple administrative page project.
-baseurl: "/admin"
+title: Settings Page
+description: A simple settings page project.
+baseurl: "/settings"
 
 # Build settings
 markdown: kramdown
