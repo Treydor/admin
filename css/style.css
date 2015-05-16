@@ -29,9 +29,9 @@ body {
 }
 
 header {
-  background: #455a64;
+  background: #1976d2;
   color: #fff;
-  padding: .5rem 0;
+  padding: 1rem 0;
   width: 100%;
 }
 
@@ -103,8 +103,10 @@ h1 {
    Navigation
    ========================================== */
 
+nav { float: left; }
+
 nav a {
-  color: #78909c;
+  color: #64b5f6;
   text-decoration: none;
   -webkit-transition: color .3s ease;
   -moz-transition: color .3s ease;
@@ -112,10 +114,10 @@ nav a {
   transition: color .3s ease;
 }
 
-nav a:hover { color: #cfd8dc; }
+nav a:hover { color: #bbdefb; }
 
 .current {
-  color: #cfd8dc;
+  color: #bbdefb;
   cursor: default;
 }
 
@@ -137,7 +139,7 @@ nav li:first-child { margin-left: 0; }
    ========================================== */
 
 .page-heading {
-  background: #607d8b;
+  background: #2196f3;
   margin-bottom: 3rem;
   padding: 2rem;
   width: 100%;
@@ -152,13 +154,19 @@ nav li:first-child { margin-left: 0; }
 }
 
 .box__header {
-  color: #607d8b;
+  color: #2196f3;
   font-size: .9rem;
   font-weight: 600;
   margin-bottom: 1rem;
   padding-left: 20px;
   text-transform: uppercase;
   width: 100%;
+}
+
+.picture {
+  background: url('../images/icons/picture.png') left no-repeat;
+  background-size: 13px;
+  margin-bottom: 1rem;
 }
 
 .email {
@@ -174,13 +182,13 @@ nav li:first-child { margin-left: 0; }
 }
 
 .personal {
-  background: url('../images/icons/pin.png') left no-repeat;
+  background: url('../images/icons/location.png') left no-repeat;
   background-size: 13px;
   margin-bottom: 1rem;
 }
 
 .about {
-  background: url('../images/icons/about.png') left no-repeat;
+  background: url('../images/icons/bio.png') left no-repeat;
   background-size: 13px;
   margin-bottom: 1rem;
 }
@@ -200,68 +208,38 @@ nav li:first-child { margin-left: 0; }
   border-radius: 50%;
   display: block;
   padding: 0;
+
 }
 
 .avatar--large {
   background-position: 50% 10px;
-  background-size: 140px;
+  background-size: cover;
   margin: 0 auto;
-  height: 140px;
-  width: 140px;
+  height: 100px;
+  width: 100px;
 }
 
 .avatar--small {
-  background-position: 50% 10%;
-  background-size: 24px;
+  background-position: 50% 2px;
+  background-size: cover;
   float: right;
   height: 22px;
   width: 22px;
 }
 
-/*
 .avatar--large .change {
-  background: rgba(0, 0, 0, 0.3) url('../images/icons/camera.png') center no-repeat;
+  background: rgba(255, 255, 255, 0.4) url('../images/icons/camera.png') center no-repeat;
   background-size: 32px;
   border-radius: 50%;
-  display: none;
-  height: 160px;
-  width: 160px;
+  height: 100px;
+  width: 100px;
 }
 
 .avatar--large:hover .change { display: block; }
-*/
 
-.profile-box { margin: 0 auto 2.5rem auto; }
-
-.profile-list {
-  list-style: none;
-  margin: 2rem 0 0 0;
-  padding: 0;
-  text-align: center;
+@media screen and (max-width: 400px) {
+  .avatar--large .change { display: block; }
 }
-
-.profile-list__button {
-  display: inline-block;
-  font-size: .9rem;
-  margin-left: 5px;
-}
-
-.profile-list__button a {
-  background: #4caf50;
-  border-radius: 2px;
-  color: #fff;
-  display: inline-block;
-  font-weight: 500;
-  padding: .4em 0;
-  text-decoration: none;
-  width: 90px;
-  -webkit-transition: background .3s ease;
-  -moz-transition: background .3s ease;
-  -o-transition: background .3s ease;
-  transition: background .3s ease;
-}
-
-.profile-list__button a:hover { background: #66bb6a; }
 
 /* ==========================================
    Forms
@@ -295,7 +273,7 @@ fieldset {
 }
 
 .button-primary {
-  background: #4caf50;
+  background: #2196f3;
   border: none;
   border-radius: 2px;
   color: #fff;
@@ -310,7 +288,7 @@ fieldset {
   transition: background .3s ease;
 }
 
-.button-primary:hover { background: #66bb6a; }
+.button-primary:hover { background: #1e88e5; }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -340,13 +318,13 @@ input::-webkit-inner-spin-button {
    Clearfix
    ========================================== */
 
- .cf {
+ .container, .row nav {
    clear: both;
    *zoom: 1;
  }
 
-.cf:before,
-.cf:after {
+.container:before, .row:before,
+.container:after, .row:after {
   clear: both;
   content: " ";
   display: table;
