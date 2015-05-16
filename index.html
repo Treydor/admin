@@ -13,10 +13,9 @@ title: Settings
   <div class="box">
     <legend class="box__header picture">Photo</legend>
     <div class="avatar avatar--large">
-      <a class="avatar--large change" href="{{site.baseurl}}/"></a>
+      <a class="change" href="{{site.baseurl}}/"></a>
     </div>
   </div>
-
   <form>
     <div class="box">
       <fieldset>
@@ -49,15 +48,9 @@ title: Settings
     <div class="box">
       <fieldset>
         <legend class="box__header personal">Personal</legend>
-        <div class="row">
-          <input class="textfield" placeholder="Full name" type="text">
-        </div>
-        <div class="row">
-          <input class="textfield" placeholder="Street Address" type="text">
-        </div>
-        <div class="row">
-          <input class="textfield" placeholder="City" type="text">
-        </div>
+        <input class="textfield" placeholder="Full name" type="text">
+        <input class="textfield" placeholder="Street Address" type="text">
+        <input class="textfield" placeholder="City" type="text">
         <div class="row">
           <div class="column half">
             <input class="textfield" placeholder="State" type="text">
@@ -66,13 +59,11 @@ title: Settings
             <input class="textfield" placeholder="Zip Code" type="number">
           </div>
         </div>
-        <div class="row">
-          <div class="checkbox-wrapper">
-            <label class="checkbox-option">
-              <input type="checkbox">
-              <span>Hide personal information from my public profile.</span>
-            </label>
-          </div>
+        <div class="checkbox-wrapper">
+          <label class="checkbox-option">
+            <input type="checkbox">
+            <span>Hide personal information from my public profile.</span>
+          </label>
         </div>
       </fieldset>
     </div>
@@ -80,9 +71,7 @@ title: Settings
     <div class="box">
       <fieldset>
         <legend class="box__header about">Bio</legend>
-        <div class="row">
-          <textarea class="textfield textfield--textarea"></textarea>
-        </div>
+        <textarea class="textfield textfield--textarea"></textarea>
       </fieldset>
     </div>
 
