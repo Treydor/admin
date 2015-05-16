@@ -47,13 +47,9 @@ a { color: #727272; }
    Structure
    ========================================== */
 
-.row { margin-bottom: 1rem; }
-
-.row:last-child { margin: 0;  }
-
 .column {
   float: left;
-  margin-left: 4%;
+  margin-left: 3%;
 }
 
 .column:first-of-type { margin: 0; }
@@ -63,11 +59,11 @@ a { color: #727272; }
   width: 100%;
 }
 
-.half { width: 48%; }
+.half { width: 48.5%; }
 
 @media screen and (max-width: 500px) {
   .half {
-    margin: 1rem 0 0 0;
+    margin: .7rem 0 0 0;
     width: 100%;
   }
 }
@@ -208,7 +204,6 @@ nav li:first-child { margin-left: 0; }
   border-radius: 50%;
   display: block;
   padding: 0;
-
 }
 
 .avatar--large {
@@ -227,7 +222,7 @@ nav li:first-child { margin-left: 0; }
   width: 22px;
 }
 
-.avatar--large .change {
+.change {
   background: rgba(255, 255, 255, 0.4) url('../images/icons/camera.png') center no-repeat;
   background-size: 32px;
   border-radius: 50%;
@@ -257,6 +252,7 @@ fieldset {
   color: #212121;
   display: block;
   outline: none;
+  margin-bottom: .7rem;
   padding: .8rem;
   width: 100%;
   -webkit-transition: border .3s ease;
@@ -266,6 +262,8 @@ fieldset {
 }
 
 .textfield:focus { border: 1px solid #c6c6c6; }
+
+.textfield:last-child { margin-bottom: 0; }
 
 .textfield--textarea {
   height: 180px;
