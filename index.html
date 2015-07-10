@@ -11,7 +11,7 @@ title: Settings
 <div class="container">
 
   <div class="box">
-    <legend class="box__header picture">Photo</legend>
+    <legend class="box__header"><i class="fa fa-user"></i>Photo</legend>
     <div class="avatar avatar--large">
       <a class="change" href="{{site.baseurl}}/"></a>
     </div>
@@ -19,10 +19,10 @@ title: Settings
   <form>
     <div class="box">
       <fieldset>
-        <legend class="box__header email">Email</legend>
+        <legend class="box__header"><i class="fa fa-envelope"></i>Email</legend>
         <div class="row">
           <div class="column half">
-            <input class="textfield" placeholder="Old Email" type="email">
+            <input class="textfield" placeholder="Current Email" type="email">
           </div>
           <div class="column half">
             <input class="textfield" placeholder="New Email" type="email">
@@ -33,10 +33,10 @@ title: Settings
 
     <div class="box">
       <fieldset>
-        <legend class="box__header lock">Password</legend>
+        <legend class="box__header"><i class="fa fa-lock"></i>Password</legend>
         <div class="row">
           <div class="column half">
-            <input class="textfield" placeholder="Old Password" type="password">
+            <input class="textfield" placeholder="Current Password" type="password">
           </div>
           <div class="column half">
             <input class="textfield" placeholder="New Password" type="password">
@@ -47,7 +47,7 @@ title: Settings
 
     <div class="box">
       <fieldset>
-        <legend class="box__header personal">Personal</legend>
+        <legend class="box__header"><i class="fa fa-map-marker"></i>Personal Information</legend>
         <input class="textfield" placeholder="Full name" type="text">
         <input class="textfield" placeholder="Street Address" type="text">
         <input class="textfield" placeholder="City" type="text">
@@ -62,7 +62,7 @@ title: Settings
         <div class="checkbox-wrapper">
           <label class="checkbox-option">
             <input type="checkbox">
-            <span>Hide personal information from my public profile.</span>
+            <span>Keep my personal information private.</span>
           </label>
         </div>
       </fieldset>
@@ -70,14 +70,14 @@ title: Settings
 
     <div class="box">
       <fieldset>
-        <legend class="box__header about">Bio</legend>
-        <textarea class="textfield textfield--textarea"></textarea>
+        <legend class="box__header"><i class="fa fa-pencil-square-o"></i>Biography</legend>
+        <textarea class="textfield textfield--textarea" placeholder="Write about yourself. What are some of your hobbies and goals?"></textarea>
       </fieldset>
     </div>
 
     <div class="box">
       <fieldset>
-        <legend class="box__header notification"> Notifications</legend>
+        <legend class="box__header"><i class="fa fa-exclamation"></i>Notifications</legend>
         <div class="radio-wrapper">
           <label class="radio-option">
             <input type="radio" name="notifications" value="all">

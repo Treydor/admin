@@ -2,10 +2,8 @@
    Style guide
    ========================================== */
 
-.color-primary { #607d8b; }
-.color-dark-primary { #455a64; }
-.color-light-primary { #cfd8dc; }
-.color-accent { #4caf50; }
+.color-primary { #1976d2; }
+.color-dark-primary { #2196f3; }
 .color-background { #eee; }
 .color-text { #212121; }
 
@@ -19,7 +17,7 @@
   box-sizing: border-box;
 }
 
-html { font: 400 15px/1.5 "Roboto", sans-serif; }
+html { font: 400 100%/1.5 "Roboto", sans-serif; }
 
 body {
   background: #eee;
@@ -87,7 +85,7 @@ h1, h2, h3, h4 {
 
 h1 {
   font-weight: 300;
-  font-size: 34px;
+  font-size: 2.2rem;
 }
 
 .page-title {
@@ -143,7 +141,6 @@ nav li:first-child { margin-left: 0; }
 
 .box {
   background: #fafafa;
-  border-radius: 2px;
   box-shadow: 1px 1px 3px #d6d6d6;
   margin-bottom: 2rem;
   padding: 2rem;
@@ -151,49 +148,11 @@ nav li:first-child { margin-left: 0; }
 
 .box__header {
   color: #2196f3;
-  font-size: .9rem;
   font-weight: 600;
-  margin-bottom: 1rem;
-  padding-left: 20px;
-  text-transform: uppercase;
-  width: 100%;
+  margin-bottom: 1.5rem;
 }
 
-.picture {
-  background: url('../images/icons/picture.png') left no-repeat;
-  background-size: 13px;
-  margin-bottom: 1rem;
-}
-
-.email {
-  background: url('../images/icons/email.png') left no-repeat;
-  background-size: 13px;
-  margin-bottom: 1rem;
-}
-
-.lock {
-  background: url('../images/icons/password.png') left no-repeat;
-  background-size: 13px;
-  margin-bottom: 1rem;
-}
-
-.personal {
-  background: url('../images/icons/location.png') left no-repeat;
-  background-size: 13px;
-  margin-bottom: 1rem;
-}
-
-.about {
-  background: url('../images/icons/bio.png') left no-repeat;
-  background-size: 13px;
-  margin-bottom: 1rem;
-}
-
-.notification {
-  background: url('../images/icons/notify.png') left no-repeat;
-  background-size: 13px;
-  margin-bottom: 1rem;
-}
+.box__header i { margin-right: .5rem; }
 
 /* ==========================================
    Profile
@@ -247,13 +206,14 @@ fieldset {
 }
 
 .textfield {
-  border: 1px solid #eee;
-  border-radius: 2px;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid #ddd;
   color: #212121;
   display: block;
   outline: none;
-  margin-bottom: .7rem;
-  padding: .8rem;
+  margin-bottom: 1rem;
+  padding: 8px 0;
   width: 100%;
   -webkit-transition: border .3s ease;
   -moz-transition: border .3s ease;
@@ -261,7 +221,7 @@ fieldset {
   transition: border .3s ease;
 }
 
-.textfield:focus { border: 1px solid #c6c6c6; }
+.textfield:focus { border-bottom: 1px solid #2196f3; }
 
 .textfield:last-child { margin-bottom: 0; }
 
@@ -273,12 +233,11 @@ fieldset {
 .button-primary {
   background: #2196f3;
   border: none;
-  border-radius: 2px;
   color: #fff;
   display: block;
   font-weight: 500;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 1.2rem;
   width: 100%;
   -webkit-transition: background .3s ease;
   -moz-transition: background .3s ease;
